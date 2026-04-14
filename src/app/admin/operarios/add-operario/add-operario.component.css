@@ -1,0 +1,44 @@
+/* Contraseña con toggle show/hide */
+.input-with-suffix {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-with-suffix:focus-within {
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(225, 6, 0, 0.15);
+}
+
+.input-with-suffix input {
+  border: none;
+  border-radius: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.input-with-suffix input:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.toggle-pass-btn {
+  background: #222;
+  border: none;
+  border-left: 1px solid #2a2a2a;
+  color: var(--gray);
+  padding: 0 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s, background 0.2s;
+  flex-shrink: 0;
+}
+
+.toggle-pass-btn:hover {
+  color: var(--white);
+  background: #2a2a2a;
+}

@@ -1,0 +1,71 @@
+/* Columnas específicas de productos */
+.menu-table td:nth-child(1) { width: 110px; }
+.menu-table td:nth-child(2) { width: 45%; }
+.menu-table td:nth-child(3) { width: 140px; text-align: right; }
+.menu-table td:nth-child(4) { width: 140px; text-align: center; }
+.menu-table td:nth-child(5) { width: 220px; }
+
+/* Filas clickeables */
+.menu-table tbody tr { cursor: pointer; }
+
+/* Acciones alineadas a la derecha */
+.actions-wrapper { justify-content: flex-end; }
+
+/* Imagen */
+.table-img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.menu-table tr:hover .table-img {
+  transform: scale(1.08);
+}
+
+/* Nombre */
+.menu-table strong {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* Descripción */
+.desc {
+  display: block;
+  font-size: 13px;
+  color: var(--gray);
+  margin-top: 4px;
+  max-width: 500px;
+}
+
+/* Precio */
+.price-cell {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--gold);
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 30px;
+}
+
+/* Estado */
+.status-cell {
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.status-available  { color: #22c55e; }
+.status-unavailable { color: var(--red); }
+.row-unavailable   { opacity: 0.6; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-table td { padding: 15px 8px; }
+  .table-img     { width: 60px; height: 60px; }
+  .desc          { font-size: 12px; }
+  .price-cell    { font-size: 14px; }
+}

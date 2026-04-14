@@ -1,0 +1,33 @@
+<section class="top-pizzas-section" id="menu-carousel">
+  <div class="top-pizzas-inner">
+
+    <!-- HEADER -->
+    <header class="top-pizzas-header">
+      <h2 class="top-pizzas-title">
+        NUESTRO <span class="text-red">MENÚ</span>
+      </h2>
+      <div class="top-pizzas-divider"></div>
+      <p class="top-pizzas-subtitle">
+        Pizzas artesanales con nombres de circuitos legendarios
+      </p>
+    </header>
+
+    <!-- SWIPER -->
+    <div class="swiper menu-swiper">
+      <div class="swiper-wrapper">
+
+        <!-- ANGULAR LOOP -->
+        <div class="swiper-slide" *ngFor="let comida of comidas">
+          <app-cards [comida]="comida"></app-cards>
+        </div>
+
+      </div>
+
+      <!-- CONTROLES -->
+      <div class="swiper-button-prev carousel-btn carousel-btn--prev"></div>
+      <div class="swiper-button-next carousel-btn carousel-btn--next"></div>
+      <div class="swiper-pagination carousel-pagination"></div>
+    </div>
+
+  </div>
+</section>

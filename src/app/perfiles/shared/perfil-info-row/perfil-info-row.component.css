@@ -1,0 +1,51 @@
+.pf-info-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: var(--pf-card-2);
+  border: 1px solid var(--pf-border);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.pf-info-row:hover {
+  background: #1c1c1c;
+  border-color: rgba(225,6,0,0.2);
+}
+
+.pf-info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--pf-red-dim);
+  color: var(--pf-red);
+  flex-shrink: 0;
+}
+
+.pf-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.pf-info-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--pf-muted);
+}
+
+.pf-info-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--pf-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
